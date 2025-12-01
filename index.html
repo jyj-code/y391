@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智囊网 - <script>
+        document.write(window.location.hostname);
+    </script></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            font-family: 'Arial', sans-serif;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .email-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            border: 2px solid white;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            background: white;
+            color: #23a6d5;
+            transform: scale(1.05);
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    <div class="container">
+        <h1>智囊网 <script>
+            document.write(window.location.hostname);
+        </script></h1>
+        <a href="mailto:a.jyj@qq.com" class="email-link">联系我 | Contact Me</a>
+    </div>
+    <div style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); text-align: center; color: white; font-size: 14px;">
+        <span style="display: inline-block; padding: 8px 15px; border: 1px solid rgba(255,255,255,0.3); border-radius: 20px; backdrop-filter: blur(5px); background: rgba(255,255,255,0.1);">
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none; transition: all 0.3s ease;" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='white'">陕ICP备15014626号</a> - <span style="cursor: not-allowed">网站域名 - <script>
+                document.write(window.location.hostname);
+            </script></span>
+        </span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js',
+        {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
